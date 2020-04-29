@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+  <div class="modal-window">
+    <i class="fas fa-times" onclick="closeModalWindow()"></i>
+    <div class="info-container">
+      <img class="m-image" src="" alt="">
+      <p class="m-name"></p>
+      <p class="m-price"></p>
+      <p class="m-details"></p>
+    </div>
+  </div>
+    <div class="container">
+        <div class="add-product">
+          <form>
+            <div>
+              <label>Product name:</label>
+              <input class="name" type="text" placeholder="Casio Watch" />
+            </div>
+            
+            <div>
+              <label>Product description:</label>
+              <textarea class="description" placeholder="Sample description..."></textarea>
+            </div>
+            
+            <div>
+              <label>Product image:</label>
+              <input class="image" type="text" placeholder="http://...jpg" />
+            </div>
+            
+            <div>
+              <label>Product price:</label>
+              <input class="price" type="number" min="0" placeholder="33.50" />
+            </div>
+            
+            <input type="button" onclick="addItem()" value="Add">
+          </form>
+        </div>
+        
+        <div class="list-products">
+        </div>
+        
+        <div class="shopping-cart">
+          <div class="shopping-cart-products">
+          </div>
+          <div class="shopping-cart-summary">
+            <div>Total: <b>$429</b></div>
+            <div><button onclick="purchased()">Purchase</button></div>
+          </div>
+        </div>
+    </div>
+      <script src="trade.js"></script>
+</body>
+</html>
