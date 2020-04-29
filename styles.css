@@ -172,9 +172,9 @@
 .modal-window{
   position: fixed;
   width: 60vw;
-  height: 60vw;
+  height: 80vh;
   left: -100%;
-  top: 20vh;
+  top: 10vh;
   background-color: rgba(216, 216, 216, 0.925);
   justify-content: center;
   z-index: 10;
